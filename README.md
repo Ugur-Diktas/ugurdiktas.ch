@@ -2,7 +2,7 @@
 
 Welcome to the personal_website_ugurdiktas.ch README.md file! 
 
-Below, you'll find procedures and tips to help you develop for ugurdikts.ch
+Below, you'll find procedures and tips to help you develop for ugurdiktas.ch
 
 # NPM versions
 
