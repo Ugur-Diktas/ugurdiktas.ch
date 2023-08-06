@@ -1,4 +1,4 @@
-# personal_website_ugurdiktas.ch
+# Personal Website https://ugurdiktas.ch
 
 Welcome to the personal_website_ugurdiktas.ch README.md file! 
 
