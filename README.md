@@ -4,22 +4,28 @@ Welcome to the personal_website_ugurdiktas.ch README.md file!
 
 Below, you'll find procedures and tips to help you develop for ugurdiktas.ch
 
-# NPM versions
+# NPM version
 
-
+8.19.2
 
 # git repository
 
 https://github.com/Ugur-Diktas/Personal-Website
 
-
-# update the dev-environment
-
-Changes made in this repository will not be automatically added to the dev-environment on the remote server. They'll have to be pulled by Ugur Diktas. 
-
 # update the productive website
 
-Updating the productive website was decided to be done manually by copying the pulled dev-environment files and pasting them into the corresponding www-directory. 
+Update the productive instance by:
+
+- being sure the main branch is up to date and stable
+- ssh to the Hostpoint server with the local terminal
+- $ cd www/ugurdiktas
+- $ git pull git@github.com:Ugur-Diktas/Personal-Website.git main
+
+Remember that any media files cannot be accessed through http(s) in the productive instance
 
 # hot-updated live server
 
+In your local project folder:
+
+- $ cd frontend
+- $ npm run serve
