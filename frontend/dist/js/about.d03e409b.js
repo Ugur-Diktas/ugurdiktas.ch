@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkugurdiktas_personal_project"]=self["webpackChunkugurdiktas_personal_project"]||[]).push([[443],{4007:(a,e,r)=>{r.r(e),r.d(e,{default:()=>p});var s=r(3396),u={class:"about"},t=(0,s._)("h1",null,"This is an about page",-1),n=[t];function c(a,e){return(0,s.wg)(),(0,s.iD)("div",u,n)}var i=r(89);const l={},o=(0,i.Z)(l,[["render",c]]),p=o}}]);
-//# sourceMappingURL=about.d03e409b.js.map
