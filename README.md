@@ -6,7 +6,7 @@ Below, you'll find procedures and tips to help you develop for ugurdiktas.ch
 
 # NPM version
 
-8.19.2
+9.8.1
 
 # git repository
 
@@ -22,10 +22,3 @@ Update the productive instance by:
 - $ git pull git@github.com:Ugur-Diktas/Personal-Website.git main
 
 Remember that any media files cannot be accessed through http(s) in the productive instance
-
-# hot-updated live server
-
-In your local project folder:
-
-- $ cd frontend
-- $ npm run serve
