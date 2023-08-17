@@ -22,3 +22,8 @@ Update the productive instance by:
 - $ git pull git@github.com:Ugur-Diktas/Personal-Website.git main
 
 Remember that any media files cannot be accessed through http(s) in the productive instance
+
+# force-pull host repository
+
+- git reset --hard origin/main
+- git pull git@github.com:Ugur-Diktas/Personal-Website.git main
