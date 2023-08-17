@@ -16,7 +16,11 @@ https://github.com/Ugur-Diktas/ugurdiktas.ch
 
 Update the productive instance by:
 
-- being sure the main branch is up to date and stable
+- be sure the main branch is up to date and stable
+
+- npm run build on your project
+- create and merge pull request
+
 - ssh to the Hostpoint server with the local terminal
 - $ cd www/ugurdiktas
 - $ git pull git@github.com:Ugur-Diktas/ugurdiktas.ch.git main
