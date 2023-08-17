@@ -4,12 +4,9 @@ Welcome to the personal_website_ugurdiktas.ch README.md file!
 
 Below, you'll find procedures and tips to help you develop for ugurdiktas.ch
 
-# NPM version
+# NPM version & git repository
 
 9.8.1
-
-# git repository
-
 https://github.com/Ugur-Diktas/Personal-Website
 
 # update the productive website
