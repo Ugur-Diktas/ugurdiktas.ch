@@ -8,7 +8,7 @@ Below, you'll find procedures and tips to help you develop for ugurdiktas.ch
 
 9.8.1
 
-# git repository
+# git repository
 
 https://github.com/Ugur-Diktas/Personal-Website
 
