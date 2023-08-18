@@ -29,3 +29,8 @@ Update the productive instance by:
 
 -   git reset --hard origin/main
 -   git pull git@github.com:Ugur-Diktas/ugurdiktas.ch.git main
+
+# linting and formatting
+
+The code is automatically linted in real time.
+To format it, you'll have to run [$ npx prettier . --write]

@@ -7,12 +7,11 @@
         <p>^^ me rn ^^</p>
         <RouterLink to="test">
             <button>
-                Wenn dir ganz langweilig ist, kannst du hier auf eine versteckte Seite navigieren ;)
+                Wenn dir ganz langweilig ist, kannst du hier auf eine versteckte
+                Seite navigieren ;)
             </button>
         </RouterLink>
     </div>
 </template>
 
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
