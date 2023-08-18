@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>FUNFACT</h1>
-        <p>Jedes Mal, wenn du auf den Knopf unten drückst, wirst eine neue andere Katze sehen :D</p>
+        <p>Jedes Mal, wenn du auf den Knopf unten drückst, wirst du eine neue Katze sehen :D</p>
         <button>
             <img src="https://cataas.com/cat/gif" alt="cat" />
         </button>
