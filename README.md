@@ -25,8 +25,6 @@ Update the productive instance by:
 -   $ cd www/ugurdiktas
 -   $ git pull git@github.com:Ugur-Diktas/ugurdiktas.ch.git main
 
-Remember that any media files cannot be accessed through http(s) in the productive instance
-
 # force-pull host repository
 
 -   git reset --hard origin/main
