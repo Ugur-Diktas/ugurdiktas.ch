@@ -1,15 +1,16 @@
 <template>
   <div>
-    <q-toolbar class="bg-red text-white shadow-2">
-      <q-btn flat label="Startseite" @click="router.push('/')"  />
+    <q-toolbar class="bg-primary text-white shadow-2">
+      <q-btn flat label="Ugur Diktas" @click="router.push('/')"  />
       
       <q-space />
 
       <q-tabs v-model="tab" shrink>
 
-        <q-tab name="tab1" label="Startseite" />
+        <q-tab :label="t('navbar.about')" @click="router.push('/about')"/>
+        <q-tab :label="t('navbar.vision')" @click="router.push('/vision')"/>
 
-        <q-btn-dropdown stretch flat label="Dropdown">
+        <q-btn-dropdown stretch flat :label="t('navbar.other')">
         <q-list>
           <q-item-label header>Folders</q-item-label>
           <q-item v-for="n in 3" :key="`x.${n}`" clickable v-close-popup tabindex="0">
@@ -41,27 +42,29 @@
         </q-list>
       </q-btn-dropdown>
 
-      <q-tab name="tab1" label="Fun zone" @click="router.push('/fun')" />
-
-      <q-btn-dropdown stretch flat :label="locale">
+      <q-btn-dropdown stretch flat :label="t('navbar.funZone')">
         <q-list>
-          <q-item clickable v-close-popup tabindex="0" @click="locale = 'DE'">
+          <q-item clickable v-close-popup tabindex="0" @click="router.push('/cats')">
             <q-item-section>
-              <q-item-label>DE</q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item clickable v-close-popup tabindex="1" @click="locale = 'EN'">
-            <q-item-section>
-              <q-item-label>EN</q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item clickable v-close-popup tabindex="2" @click="locale = 'FR'">
-            <q-item-section>
-              <q-item-label>FR</q-item-label>
+              <q-item-label>KATZEN!</q-item-label>
             </q-item-section>
           </q-item>
         </q-list>
       </q-btn-dropdown>
+
+      <q-tab :label="t('navbar.contact')" @click="router.push('/contact')"/>
+
+      <q-btn-dropdown stretch flat :label="locale">
+        <q-list>
+          <q-item v-for="lang in langs" clickable v-close-popup @click="locale = lang">
+            <q-item-section>
+              <q-item-label>{{ lang }}</q-item-label>
+            </q-item-section>
+          </q-item>
+        </q-list>
+      </q-btn-dropdown>
+
+      <q-tab :label="mode" @click="toggleMode()" />
 
       </q-tabs>
     </q-toolbar>
@@ -76,8 +79,22 @@ import { useI18n } from 'vue-i18n';
 import router from '../router/index'
 
 const { locale } = useI18n();
+const { t } = useI18n();
 
 let tab = ref('');
+let langs = ['DE', 'EN', 'FR'];
+let modes = ['light', 'dark', 'auto'];
+let mode = ref(modes[0]);
+
+function toggleMode() {
+  if (mode.value == modes[0]) {
+    mode.value = modes[1];
+  } else if (mode.value == modes[1]) {
+    mode.value = modes[2];
+  } else if (mode.value == modes[2]) {
+    mode.value = modes[0];
+  }
+}
 
 </script>
 

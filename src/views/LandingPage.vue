@@ -5,7 +5,7 @@
         <p>Bitte schau später nochmal vorbei. Stand: August 2023</p>
         <p>(╯°□°）╯︵ ┻━┻</p>
         <p>^^ me rn ^^</p>
-        <RouterLink to="test">
+        <RouterLink to="cats">
             <button>
                 Wenn dir ganz langweilig ist, kannst du hier auf eine versteckte
                 Seite navigieren ;)
@@ -14,4 +14,6 @@
     </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+
+</script>

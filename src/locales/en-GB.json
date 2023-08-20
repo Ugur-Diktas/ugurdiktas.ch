@@ -1,3 +1,10 @@
 {
+    "navbar": {
+        "about": "about Ugur",
+        "vision": "Vision",
+        "other": "Other",
+        "funZone": "Fun zone",
+        "contact": "Contact"
+    },
     "message": "Hello world!"
 }
