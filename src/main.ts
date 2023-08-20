@@ -6,7 +6,7 @@ import router from './router'
 import { createPinia } from 'pinia'
 
 import { createI18n, type I18nOptions } from 'vue-i18n'
-import enUS from './locales/en-GB.json'
+import enGB from './locales/en-GB.json'
 import deCH from './locales/de-CH.json'
 import frCH from './locales/fr-CH.json'
 
@@ -19,12 +19,12 @@ const pinia = createPinia()
 
 const options: I18nOptions = {
   legacy: false,
-  locale: 'de-CH',
-  fallbackLocale: 'en-US',
+  locale: 'DE',
+  fallbackLocale: 'EN',
   messages: {
-    'en-US': enUS,
-    'de-CH': deCH,
-    'fr-CH': frCH
+    'EN': enGB,
+    'DE': deCH,
+    'FR': frCH
   }
 }
 
