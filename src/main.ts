@@ -18,14 +18,14 @@ let app = createApp(App)
 const pinia = createPinia()
 
 const options: I18nOptions = {
-  legacy: false,
-  locale: 'DE',
-  fallbackLocale: 'EN',
-  messages: {
-    'EN': enGB,
-    'DE': deCH,
-    'FR': frCH
-  }
+    legacy: false,
+    locale: 'DE',
+    fallbackLocale: 'EN',
+    messages: {
+        EN: enGB,
+        DE: deCH,
+        FR: frCH,
+    },
 }
 
 const i18n = createI18n<typeof options>(options)
