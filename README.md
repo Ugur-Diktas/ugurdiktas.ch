@@ -12,13 +12,23 @@ Below, you'll find procedures and tips to help you develop for ugurdiktas.ch
 
 https://github.com/Ugur-Diktas/ugurdiktas.ch
 
+# run development environment
+
+-   $ npm run serve
+
+and if there is an error:
+
+-   $ rm -rf node_modules package-lock.json
+-   npm cache clean --force
+-   npm install
+
 # update the productive website
 
 Update the productive instance by:
 
 -   be sure the main branch is up to date and stable
 
--   npm run build on your project
+-   $ npm run build #on your project
 -   create and merge pull request
 
 -   ssh to the Hostpoint server with the local terminal
@@ -27,9 +37,7 @@ Update the productive instance by:
 
 Remember that any media files cannot be accessed through http(s) in the productive instance
 
-#
-
-If you want to reinitialise the host git-repo:
+# If you want to reinitialise the host git-repo
 
 -   $ cd www/ugurdiktas
 -   rm -rf .git
